@@ -1,0 +1,605 @@
+/* Unique color scheme and typography */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+    line-height: 1.6;
+    font-style: oblique;
+}
+
+header {
+    background-color: #1a1a1a;
+    color: #5fca07;
+    padding: 15px 0;
+    text-align: center;
+    font-style: italic;
+    background-color: #333;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Imagery and iconography */
+.hero {
+    background-image: url('flying-car-bg.jpg');
+    background-size: cover;
+    color: #116658;
+    text-align: center;
+    padding: 200px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Features section */
+.features {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.features .model {
+    display: inline-block;
+    vertical-align: top;
+    width: calc(50% - 40px);
+    margin: 20px;
+    background-color: #fff;
+    border: 1px solid #792323;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: slideInFromLeft 1s ease-out;
+}
+
+.features .model img {
+    max-width: 100%; /* Ensure images don't exceed container width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px;
+    margin-bottom: 10px; /* Adjust spacing as needed */
+}
+
+.features .model h2 {
+    font-size: 2.5rem;
+    font-style: italic; /* Make heading italic */
+    margin-bottom: 10px;
+}
+
+.features .model p {
+    font-size: 1.6rem;
+    line-height: 1.6;
+}
+
+.about {
+    background-color: #f0f0f0;
+    padding: 150px 0;
+    text-align: center;
+}
+
+.about .content {
+    display: flex;
+    justify-content: space-around; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+}
+
+.about .info {
+    max-width: 600px; /* Limit width of text content */
+    text-align: left; /* Align text to the left */
+    padding: 0 20px; /* Add padding for spacing */
+}
+
+.about .info h2 {
+    font-size: 3rem;
+    font-style: italic; /* Make heading italic */
+    margin-bottom: 20px;
+    color: #333; /* Adjust heading color */
+}
+
+.about .info p {
+    font-size: 1.8rem;
+    line-height: 1.6;
+    color: #666; /* Adjust text color */
+}
+
+.about .image-container {
+    flex: 1; /* Take remaining space */
+}
+
+.about-img {
+    max-width: 100%; /* Ensure image doesn't exceed container width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+}
+
+
+/* Animation integration */
+@keyframes slideInFromLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.features .model {
+    animation: slideInFromLeft 1s ease-out;
+}
+
+@media (max-width: 768px) {
+    /* Mobile styles */
+    .hero {
+        padding: 120px 0;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1.5rem;
+    }
+
+    .features .model {
+        padding: 30px;
+    }
+
+    .about {
+        padding: 100px 0;
+    }
+
+    .about .info h2 {
+        font-size: 2.5rem;
+    }
+
+    .about .info p {
+        font-size: 1.5rem;
+    }
+}
+
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    background-color: #555;
+}
+
+/* Hero section styles */
+.hero {
+    background-image: url('flying-car-bg.jpg');
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 150px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+}
+
+.hero .btn {
+    display: inline-block;
+    background-color: #f44336;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.hero .btn:hover {
+    background-color: #555;
+}
+
+/* Features section styles */
+.features {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.features .feature {
+    margin-bottom: 50px;
+}
+
+.features .feature h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.features .model {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 30px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.features .model h3 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.features .model p {
+    font-size: 1.1rem;
+}
+
+/* About section styles */
+.about {
+    padding: 100px 0;
+    text-align: center;
+    background-color: #f0f0f0;
+}
+
+.about h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+}
+
+.contact {
+    background-color: #e9f5fc;
+    padding: 150px 0;
+    text-align: center;
+}
+
+.contact .content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact .info {
+    margin-bottom: 50px;
+}
+
+.contact .info h2 {
+    font-size: 3rem;
+    font-style: italic; /* Make heading italic */
+    margin-bottom: 20px;
+    color: #333; /* Adjust heading color */
+}
+
+.contact .info p {
+    font-size: 1.8rem;
+    line-height: 1.6;
+    color: #666; /* Adjust text color */
+}
+
+.contact .contact-details {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+}
+
+.contact .contact-details li {
+    margin-bottom: 10px;
+}
+
+.contact-form {
+    background-color: #585555;
+    border: 1px solid #361111;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.contact-form .form-group {
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #1b1313;
+    border-radius: 5px;
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form button {
+    display: inline-block;
+    background-color: #f44336;
+    color: #221919;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #555;
+}
+
+
+/* CSS animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero, .features .feature, .about {
+    animation: fadeInUp 1s ease-out;
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+    /* Tablet styles */
+    .hero {
+        padding: 120px 0;
+    }
+
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+    .hero p {
+        font-size: 1.5rem;
+    }
+
+    .features {
+        padding: 80px 0;
+    }
+
+    .features .model {
+        padding: 20px;
+    }
+
+    .features .feature h2 {
+        font-size: 2.5rem;
+    }
+
+    .features .model h3 {
+        font-size: 1.8rem;
+    }
+
+    .about {
+        padding: 80px 0;
+    }
+
+    .about h2 {
+        font-size: 2.5rem;
+    }
+
+    .about p {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Mobile styles */
+    header nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+
+    .hero {
+        padding: 80px 0;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1.3rem;
+    }
+
+    .features {
+        padding: 60px 0;
+    }
+
+    .features .model {
+        padding: 15px;
+    }
+
+    .features .feature h2 {
+        font-size: 2rem;
+    }
+
+    .features .model h3 {
+        font-size: 1.5rem;
+    }
+
+    .about {
+        padding: 60px 0;
+    }
+
+    .about h2 {
+        font-size: 2rem;
+    }
+
+    .about p {
+        font-size: 1.3rem;
+    }
+
+    footer {
+        padding: 30px 0;
+    }
+
+    .footer p {
+        font-size: 1rem;
+    }
+}
+/* Reset and basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Video background section */
+.video-background {
+    position: relative;
+    height: 100vh; /* Adjust as needed */
+    overflow: hidden;
+}
+
+#bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: #0c0a0a;
+    padding: 100px 20px;
+}
+
+.content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+}
+
+.content .btn {
+    display: inline-block;
+    background-color: #f44336;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.content .btn:hover {
+    background-color: #555;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .content h1 {
+        font-size: 2.5rem;
+    }
+    .content p {
+        font-size: 1.5rem;
+    }
+}
+.features {
+    display: flex;
+    justify-content: space-around; /* Adjust spacing between items */
+    align-items: center; /* Vertically center items */
+    padding: 80px 0;
+    text-align: center;
+}
+
+.model {
+    flex: 1; /* Each model takes equal space */
+    margin: 0 10px; /* Adjust margins as needed */
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: slideInFromLeft 1s ease-out;
+}
+
+.model img {
+    max-width: 100%; /* Ensure images don't exceed container width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px;
+    margin-bottom: 10px; /* Adjust spacing as needed */
+}
+
+.model h2 {
+    font-size: 2.5rem;
+    font-style: italic; /* Make heading italic */
+    margin-bottom: 10px;
+}
+
+.model p {
+    font-size: 1.6rem;
+    line-height: 1.6;
+}
+
+/* Animation */
+@keyframes slideInFromLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .features {
+        flex-direction: column; /* Stack items vertically on small screens */
+    }
+
+    .model {
+        width: 100%; /* Full width on smaller screens */
+        margin: 10px 0; /* Adjust margins */
+    }
+}
